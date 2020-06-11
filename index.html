@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora de Sálario Líquido</title>
+	<script src="./content/javascript/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="./content/css/style.css">
+</head>
+
+<body>
+	<div class="title">
+		<h3>CALCULADORA DE SÁLARIO LÍQUIDO</h3>
+	</div>
+	<fieldset>
+		<form>
+			<div id="camps">
+				<label for="txtsalhora"> Salário por Hora: </label>
+				<input type="number" min="0" oninput="this.value = Math.abs(this.value)"  id="txtsalhora">
+			<br/>
+				<label for="txtqthoras">Horas trabalhadas: </label>
+				<input type="number" min="0" oninput="this.value = Math.abs(this.value)"  id="txtqthoras">
+			<br/>
+				<label for="txtdep"> Dependentes: </label>
+				<input type="number" min="0" oninput="this.value = Math.abs(this.value)"  id="txtdep">
+			<br/>
+				<button type="button" onclick="calcsl();"> Calcular</button>
+			<br/>
+			<br/>
+				<span id="msg">
+			<br/>
+				</span>
+			</div>
+		</form>
+	</fieldset>
+	<div class="title">
+		<h5>Desenvolvido por: Rodolfo Eufrasio</br></br> 1º Módulo de Informatica para Internet</h5>
+	</div>
+
+</body>
+</html>
